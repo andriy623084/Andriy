@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<html xmlns:type="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width",initial-scale="1.0">
+    <link rel="stylesheet" type:"text/css" <a href="style3.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
+
+    <title>Shoe shop</title>
+
+</head>
+<body>
+<header>
+    <div class="center-block-main">
+        <div class="header-top clearfix">
+                <p class="logo">BIRUANG</p>
+            <div class="contact-info">
+                <p class="header-phone"><img src="IconPhone2.jpg" alt="Call me baby">+371  282  20  760</p>
+                <p class="header-trolley"><img src="trolleyIcon.png" alt="by it only today">$ 99.54 <a href="/">checkout</a></p>
+            </div>
+            </div>
+        <div class="header-bottom clearfix">
+            <nav>
+                <ul class="menu">
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">men</a></li>
+                    <li><a href="#">women</a></li>
+                    <li><a href="#">kids</a></li>
+                    <li><a href="#">sale</a></li>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">support</a></li>
+                </ul>
+            </nav>
+            <div class="Search-block">
+                <form action="" method="get">
+                    <input type="image"src="searchIcon.png" class="search-button">
+                    <input type="search" class="search-field" placeholder="Search...">
+                </form>
+            </div>
+        </div>
+    </div>
+</header>
+    <div class="slideshow-container center-block-main">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="images/fitness_tracker_guide_cover_2-1170x680.jpg" style="width:100%">
+            <ul>
+                <li>
+                    <h2>RIGHT IS PINK. <br>LEFT IS BLUE
+                    </h2>
+                    <p>
+                        Inspired by Brasil’s bold colors and matching up to football’s on-pitch<br>
+                        playmakers, these kicks are ready to stand out.
+                    </p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="images/SliderPhoto.jpg" style="width:100%">
+            <ul>
+             <li>
+                <h2>RIGHT IS PINK. <br>LEFT IS BLUE
+                </h2>
+                <p>
+                    Inspired by Brasil’s bold colors and matching up to football’s on-pitch<br>
+                    playmakers, these kicks are ready to stand out.
+                </p>
+             </li>
+            </ul>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="images/20170827_072903.jpg" style="width:100%">
+            <ul>
+                <li>
+                    <h2>RIGHT IS PINK. <br>LEFT IS BLUE
+                    </h2>
+                    <p>
+                        Inspired by Brasil’s bold colors and matching up to football’s on-pitch<br>
+                        playmakers, these kicks are ready to stand out.
+                    </p>
+                </li>
+            </ul>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+
+
+
+<script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }
+    </script>
+  <div class="block3-main center-block-main clearfix">
+     <article>
+         <img src="images/football.jpg" alt="just a foot">
+         <h2><a href="#">FOOTBALL SHOES</a> </h2>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing,
+             vivamus congue nulla leo, quis imperdiet magna</p>
+     </article>
+     <article>
+         <img src="images/walkingKids.jpg" alt="kids">
+         <h2><a href="#">MODERN CLOTHES</a> </h2>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing,
+             vivamus congue nulla leo, quis imperdiet magna.</p>
+     </article>
+     <article>
+         <img src="images/Shoes.jpg" alt="shoes">
+         <h2><a href="#">BAGS & ACCESSORIES</a> </h2>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing,
+             vivamus congue nulla leo, quis imperdiet magna.</p>
+     </article>
+  </div>
+<div class="title4 center-block-main">
+    <h2>POPULAR PRODUCTS</h2>
+</div>
+<div class="block4-main center-block-main clearfix">
+    <article>
+        <img src="images/laying%20and%20up.jpg" alt="just a foot">
+        <div class="text-block clearfix">
+        <h2>Nike Tailwind Loose</h2>
+        <h3>Running Tank Top</h3>
+        <p>The Nike Tailwind Loose Women's Running Tank
+            Top is made with sweat-wicking fabric to help you
+            stay dry and comfortable on your run.</p>
+            <div class="price-busket clearfix">
+                <span class="price">$ 36.99</span>
+                <span class="add-item"><a href="#"><img src="Add%20to%20card.jpg"></a></span>
+            </div>
+        </div>
+    </article>
+    <article>
+        <img src="images/Standing.jpg" alt="kids">
+        <div class="text-block clearfix">
+        <h2>Nike g87</h2>
+        <h3>Training Tank Top</h3>
+        <p>The Nike G87 Women's Training Tank Top features
+            soft, sweat-wicking fabric and a regular fit for total
+            comfort during any workout.</p>
+            <div class="price-busket clearfix">
+                <span class="price">$ 49.99</span>
+                <span class="add-item"><a href="#"><img src="Add%20to%20card.jpg"></a></span>
+            </div>
+        </div>
+    </article>
+    <article>
+        <img src="images/lagUp.jpg" alt="shoes">
+        <div class="text-block clearfix">
+        <h2>Nike I-Beam Swoosh</h2>
+        <h3>Sports Top</h3>
+        <p>The Nike I-Beam Swoosh Women's Sports Top
+            features a built-in bra and mesh back panel for
+            lightweight support and targeted breathability.
+        </p>
+            <div class="price-busket clearfix">
+                <span class="price">$ 70.00</span>
+                <span class="add-item"><a href="#"><img src="Add%20to%20card.jpg"></a></span>
+            </div>
+        </div>
+    </article>
+    <article>
+        <img src="images/sittingLagUp.jpg" alt="shoes">
+        <div class="text-block clearfix">
+        <h2>Nike lux</h2>
+        <h3>Running Top</h3>
+        <p>The Nike Lux Women's Running Top is made with lightweight Dri-FIT fabric and features a perforated
+            back panel for comfort and enhanced breathability. /* here is my aaditional vovk as author of this
+            text I`m more then sure that we have some future */
+        </p>
+            <div class="price-busket clearfix">
+                <span class="price">$ 28.49</span>
+                <span class="add-item"><a href="#"><img src="Add%20to%20card.jpg"></a></span>
+            </div>
+        </div>
+    </article>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script>
+    function setEqualHeight(columns) {
+        var tallestcolumn = 0;
+        columns.each( function() {
+            currentHeight = $(this).height();
+            if(currentHeight > tallestcolumn) { tallestcolumn = currentHeight; } } );
+        columns.height(tallestcolumn);
+    }
+
+    $(document).ready(function() { setEqualHeight($(".text-block")); });
+</script>
+
+<div class="About4 center-block-main clearfix">
+    <article>
+        <h2>
+         About
+        </h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dictum lectus sit amet varius pulvinar. Proin vitae
+        dui tincidunt nibh facilisis pellentesque.  Fusce tortor turpis, facilisis ut condimentum eu, sagittis at est.</p>
+
+
+            <p>Praesent egestas posuere urna a egestas. Maecenas facilisis orci vitae ante  tempor accumsan. Aenean aliquam
+                justo ac sagittis vehicula. Nam mattis pretium odio sit amet vulputate.</p>
+
+            <p>Quisque non lobortis orci. Morbi augue mauris, ultrices at fermentum ac, consequat vitae magna. Pellentesque
+            non cursus mi, eu cursus nunc. Nullam  et odio tristique, volutpat urna vitae, dignissim orci. Fusce eu nulla urna.
+                This template was created by Erik Padamans.</p>
+
+            <p>Praesent egestas posuere urna a egestas. Maecenas facilisis orci vitae ante  tempor accumsan. Aenean aliquam
+                justo ac sagittis vehicula. Nam mattis pretium odio sit amet vulputate.</p>
+    </article>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d330.69742793766113!2d25.595152782179497!3d49.55733398659606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e6!4m3!3m2!1d49.557380699999996!2d25.595315199999998!4m3!3m2!1d49.5574589!2d25.5951041!5e0!3m2!1suk!2sua!4v1519160217785" width="400" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+</div>
+
+<div class="Block5">
+    <div class="inlign center-block-main clearfix">
+        <h2><strong>Sign up</strong> for exclusive sales and product news</h2>
+    <div class="subscribefield">
+        <form action="" method="get">
+            <input type="email" class="subscribe" placeholder="eony321v@gmail.com">
+            <input type="submit" class="submitbutton" value="sign up">
+        </form action>
+    </div>
+    </div>
+</div>
+<footer>
+    <div class=" block4-main center-block-main clearfix">
+    <article>
+        <h2>Our Stores</h2>
+        <div class="footer-block-content">
+        <p>Feel free to visit our stores or contact us.<br>
+            1401 South Grand Avenue<br>
+            Los Angeles, CA 90015<br>
+            (213) 748-2411</p>
+            <p>
+                100 Fairview Drive<br>
+                Franklin, VA 23851<br>
+                (757) 569-6100
+            </p>
+        </div>
+    </article>
+        <article>
+            <h2>Blog posts</h2>
+            <div class="footer-block-content">
+                <h3><a href="#"> Justin Bieber confirmed that he is gay.</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Donec sed auctor elit.</p>
+                <h3><a href="#"> New sexy sport clothes are here!</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Donec sed auctor elit.</p>
+                <h3><a href="#"> Summer sales are coming!</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Donec sed auctor elit. </p>
+            </div>
+        </article>
+        <article>
+            <h2>Support</h2>
+            <div class="footer-block-content">
+                <div class="support-left clearfix">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Payment</a></li>
+                            <li><a href="#">Refunds</a></li>
+                            <li><a href="#">Track Order</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Privacy & Security</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Corporate Information</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="support-right clearfix">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Sizing</a></li>
+                    <li><a href="#">Ordering</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Affiliates</a></li>
+                    <li><a href="#">Find A Store</a></li>
+                    <li><a href="#">Site Map</a></li>
+                    <li><a href="#">Sign Up & Save</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </article>
+        <article>
+            <h2>Contact us</h2>
+            <div class="footer-block-content">
+                <div class="subscribefield">
+                    <form action="" method="get">
+                        <input type="email" class="subscribe" placeholder="your e-mail...">
+                        <input type="text" class="text-field" placeholder="your text...">
+                        <input type="submit" class="submitbutton" value="send message">
+                    </form action>
+                </div>
+            </div>
+        </article>
+    </div>
+</footer>
+</body>
+</html>
